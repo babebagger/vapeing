@@ -1,0 +1,18 @@
+local WhitelistedUsers = { "OptimallyShaddy" } -- Replace with actual usernames
+
+local function isWhitelisted(username)
+    for _, allowed in ipairs(WhitelistedUsers) do
+        if username == allowed then
+            return true
+        end
+    end
+    return false
+end
+
+local player = game:GetService("Players").LocalPlayer
+
+if isWhitelisted(player.Name) then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/h4llstar/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+else
+    warn("You are not whitelisted to use this script.")
+end

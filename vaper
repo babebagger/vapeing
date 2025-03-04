@@ -1,4 +1,4 @@
-local WhitelistedUsers = { "Sticky_Tiip" } -- Replace with actual usernames
+local WhitelistedUsers = { "jordan1 } -- Replace with actual usernames
 
 local function isWhitelisted(username)
     for _, allowed in ipairs(WhitelistedUsers) do
